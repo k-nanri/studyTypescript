@@ -1,3 +1,5 @@
+import { MyInterface, MyClass } from "./lib/mylib";
+
 function hello(name: string): void {
     console.log("Hello " + name + "!");
 }
@@ -12,7 +14,7 @@ enum Color {Red, Green, Blue};
 let v_enm: Color = Color.Blue;
 console.log(v_enm);
 
-class MyClass {
+class MyClass2 {
     private name:string;
 
     constructor(name:string) {
@@ -28,7 +30,7 @@ function func(arg: string | number) : void {
     console.log(arg);
 }
 
-var myClass: MyClass = new MyClass("hoge");
+var myClass: MyClass2 = new MyClass2("hoge");
 console.log(myClass.getName());
 func("aaaa");
 func(12345);
@@ -41,3 +43,5 @@ const test = {} as Test;
 test.foo = 123;
 console.log(test.foo);
 
+const obj: MyInterface = new MyClass("test");
+console.log(obj.name);
