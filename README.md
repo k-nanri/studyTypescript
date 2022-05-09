@@ -7,3 +7,4 @@
 ## 次にやる
 
 [https://maku.blog/p/gqo9yoo/]
+[https://future-architect.github.io/typescript-guide/index.html]
