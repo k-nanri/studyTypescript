@@ -4,3 +4,6 @@ function hello(name: string): void {
 
 let your_name: string = "Yamada";
 hello(your_name);
+
+let v_bool: boolean = true;
+console.log(v_bool);
