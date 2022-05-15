@@ -1,4 +1,4 @@
-import {MyInterface, MyClass} from './lib/mylib';
+import {MyInterface, MyClass} from '../lib/mylib';
 
 /**
  * xxx

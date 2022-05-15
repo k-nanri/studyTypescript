@@ -10,3 +10,13 @@
 ## 次にやる
 
 [https://future-architect.github.io/typescript-guide/index.html]
+
+
+## expressを使ってAPIサーバ
+
+- getメソッド
+- postメソッド
+- postgresql連携
+- deleteメソッド
+- updateメソッド
+- openapi
