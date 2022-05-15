@@ -2,8 +2,15 @@ export interface MyInterface {
     name: string;
 }
 
+/**
+ * xxxx
+ */
 export class MyClass implements MyInterface {
-    constructor(public name: string) {
-        this.name = name;
-    }
+  /**
+   * aaa
+   * @param {string} name
+   */
+  constructor(public name: string) {
+    this.name = name;
+  }
 }

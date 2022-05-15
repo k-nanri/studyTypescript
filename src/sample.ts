@@ -1,38 +1,42 @@
-import { MyInterface, MyClass } from "./lib/mylib";
+import {MyInterface, MyClass} from './lib/mylib';
 
+/**
+ * xxx
+ * @param {string} name
+ */
 function hello(name: string): void {
-    console.log("Hello " + name + "!");
+  console.log('Hello ' + name + '!');
 }
 
-let your_name: string = "Yamada";
+const your_name: string = 'Yamada';
 hello(your_name);
 
-let v_bool: boolean = true;
+const v_bool: boolean = true;
 console.log(v_bool);
 
 enum Color {Red, Green, Blue};
-let v_enm: Color = Color.Blue;
+const v_enm: Color = Color.Blue;
 console.log(v_enm);
 
 class MyClass2 {
-    private name:string;
+  private name:string;
 
-    constructor(name:string) {
-        this.name = name;
-    }
+  constructor(name:string) {
+    this.name = name;
+  }
 
-    public getName() : string {
-        return this.name;
-    }
+  public getName() : string {
+    return this.name;
+  }
 }
 
 function func(arg: string | number) : void {
-    console.log(arg);
+  console.log(arg);
 }
 
-var myClass: MyClass2 = new MyClass2("hoge");
+const myClass: MyClass2 = new MyClass2('hoge');
 console.log(myClass.getName());
-func("aaaa");
+func('aaaa');
 func(12345);
 
 interface Test {
@@ -43,5 +47,5 @@ const test = {} as Test;
 test.foo = 123;
 console.log(test.foo);
 
-const obj: MyInterface = new MyClass("test");
+const obj: MyInterface = new MyClass('test');
 console.log(obj.name);
