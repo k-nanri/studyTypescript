@@ -1,4 +1,5 @@
 import express, { Application, Request, Response } from 'express';
+import { UserController } from './controllers/UserController';
 
 const app: Application = express();
 const PORT: string = '3000';
@@ -7,11 +8,9 @@ const PORT: string = '3000';
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get('/', async (_req: Request, res: Response) => {
-  console.log(_req.query);
-  return res.status(200).send({
-    message: 'Hello World!',
-  });
+app.get('/users', async (_req: Request, res: Response) => {
+  const userContoller: UserController = new UserController(_req, res);
+  return userContoller.getAllUser();
 });
 
 // 受信待ち用設定

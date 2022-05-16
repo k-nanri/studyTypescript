@@ -12,7 +12,7 @@
 
 [https://future-architect.github.io/typescript-guide/index.html]
 
-# express を使って API サーバを作る
+## express を使って API サーバを作る
 
 - get メソッド
 - UnitTest
@@ -78,6 +78,19 @@ babel.config.json を作成
   "presets": ["@babel/preset-env"]
 }
 ```
+
+### jest
+
+#### jest のインストール
+
+```shell
+npm install --save-dev babel-jest @babel/core @babel/preset-env @babel/preset-typescript ts-jest @types/jest
+```
+
+babel.config.json の編集
+
+コンフィグファイルの作成
+./node_modules/.bin/ts-jest config:init
 
 ### メモ
 
