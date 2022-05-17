@@ -4,24 +4,16 @@ import { Request, Response } from 'express';
  *
  */
 export class UserController {
-  private request: Request;
-  private response: Response;
-
   /**
    *
+   */
+  constructor() {}
+
+  /**
    * @param {Request} req
    * @param {Response} res
    */
-  constructor(public req: Request, public res: Response) {
-    this.request = req;
-    this.response = res;
-  }
-
-  /**
-   *
-   * @returns {Response}
-   */
-  public getAllUser(): Response {
+  public getAllUser(req: Request, res: Response): void {
     const users = [
       {
         id: 1,
@@ -29,6 +21,6 @@ export class UserController {
         age: 30,
       },
     ];
-    return this.res.status(200).send(JSON.stringify(users));
+    res.status(200).send(JSON.stringify(users));
   }
 }
